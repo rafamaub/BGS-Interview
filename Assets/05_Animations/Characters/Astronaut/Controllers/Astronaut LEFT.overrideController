@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Astronaut LEFT
+  m_Controller: {fileID: 9100000, guid: 3dfe10c66aa9bfc4f866d91587cecf93, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 6d0d66b44f440f448bb59710df702787, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3e9cf71a0b2ca134ba812bf2233a9cdd, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 377368f178d3b4543b4beddcd22276cf, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 76c748a1fc8c1b34e80726905f3c0559, type: 2}
