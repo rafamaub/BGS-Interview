@@ -9,7 +9,7 @@ public class ItemInfoSection : MonoBehaviour
 {
     const float originalXPos = -165f;
     const float targetXPos = 100f;
-
+    [SerializeField] private bool isShop;
     [SerializeField] private TextMeshProUGUI itemName;
     [SerializeField] private TextMeshProUGUI itemDescription;
     [SerializeField] private Image itemIcon;
@@ -19,6 +19,7 @@ public class ItemInfoSection : MonoBehaviour
 
     InventoryItem showingItem;
     InventoryManager manager;
+    ShopScreenManager shopManager;
     RectTransform myRect;
 
     public void InitializeInfoScreen(InventoryManager man)
@@ -26,10 +27,20 @@ public class ItemInfoSection : MonoBehaviour
         myRect = GetComponent<RectTransform>();
         manager = man;
     }
-
-    void HideScreen()
+    public void InitializeInfoScreenShop(ShopScreenManager man)
     {
-        if(!manager.GetSlotFromItem(showingItem))
+        myRect = GetComponent<RectTransform>();
+        shopManager = man;
+    }
+
+    public void HideScreen()
+    {
+        if(isShop)
+        {
+            myRect.DOComplete();
+            myRect.DOAnchorPosX(originalXPos, 0.25f);
+        }
+        else if(!manager.GetSlotFromItem(showingItem))
         {
             myRect.DOComplete();
             myRect.DOAnchorPosX(originalXPos, 0.25f);
@@ -65,6 +76,12 @@ public class ItemInfoSection : MonoBehaviour
         {
             equipButton.gameObject.SetActive(false);
         }
+
+        if (isShop)
+        {
+            consumeButton.gameObject.SetActive(false);
+            equipButton.gameObject.SetActive(false);
+        }
     }
 
     public void DiscardItem()
@@ -90,4 +107,5 @@ public class ItemInfoSection : MonoBehaviour
 
         HideScreen();
     }
+
 }

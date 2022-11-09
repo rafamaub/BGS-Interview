@@ -6,13 +6,12 @@ using UnityEngine;
 public class InventoryItem : ScriptableObject
 {
     public string itemName;
-    
-    [TextArea]
-    public string itemDescrption;
+    [TextArea] public string itemDescrption;
     public Sprite itemIcon; //LUCKILY THE ICON WILL BE THE SAME AS THE PICKABLE SPRITE
     public ItemType myType;
     public bool isStackable;
-    
+    public int defaultPrice;
+    public bool canSell;
 
 }
 

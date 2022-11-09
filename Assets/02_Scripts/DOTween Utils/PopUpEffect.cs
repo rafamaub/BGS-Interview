@@ -9,17 +9,25 @@ public class PopUpEffect : MonoBehaviour
     bool open;
     public void Pop()
     {
-        open = true;
-        transform.DOComplete();
-        transform.localScale = Vector3.zero;
-        transform.DOScale(1f, time);
+        if(!open)
+        {
+            open = true;
+            transform.DOComplete();
+            transform.localScale = Vector3.zero;
+            transform.DOScale(1f, time);
+        }
+
     }
 
     public void Unpop()
     {
-        open = false;
-        transform.DOComplete();
-        transform.DOScale(0f, time);
+        if(open)
+        {
+            open = false;
+            transform.DOComplete();
+            transform.DOScale(0f, time);
+        }
+
     }
 
 

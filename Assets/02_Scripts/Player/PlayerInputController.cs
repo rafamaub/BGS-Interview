@@ -7,6 +7,7 @@ public class PlayerInputController : MonoBehaviour
 {
     [SerializeField] private CharacterController2D movementController;
     [SerializeField] private InventoryManager inventory;
+    [SerializeField] private Interactor interactor;
     public void MovePlayer(InputAction.CallbackContext ctx)
     {
         Vector2 dir = ctx.ReadValue<Vector2>();
@@ -30,6 +31,14 @@ public class PlayerInputController : MonoBehaviour
         if(ctx.performed)
         {
             inventory.ShowInventory();
+        }
+    }
+
+    public void Interact(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            interactor.InteractWithClosest();
         }
     }
 }

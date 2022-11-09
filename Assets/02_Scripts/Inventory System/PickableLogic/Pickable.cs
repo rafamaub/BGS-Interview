@@ -6,6 +6,7 @@ using DG.Tweening;
 public class Pickable : MonoBehaviour
 {
     [SerializeField] private InventoryItem itemToPick;
+    [SerializeField] private MoneyGiver money;
     [SerializeField] private SpriteRenderer itemSprite;
     Transform player;
     bool close;
@@ -23,7 +24,12 @@ public class Pickable : MonoBehaviour
             transform.position = Vector2.Lerp(transform.position, player.position, Time.deltaTime);
             if(distance < 0.2f)
             {
-                FindObjectOfType<InventoryManager>().GetItem(itemToPick);
+                if(itemToPick)
+                    FindObjectOfType<InventoryManager>().GetItem(itemToPick);
+
+                if (money)
+                    money.GiveMoney();
+
                 Destroy(gameObject);
             }
         }
