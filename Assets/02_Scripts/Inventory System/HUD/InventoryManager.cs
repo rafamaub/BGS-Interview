@@ -90,4 +90,51 @@ public class InventoryManager : MonoBehaviour
 
         return null;
     }
+
+    public void TotalDiscardItem(InventoryItem toDiscard) //THIS FUNCTION IS TO DISCARD ONE BY ONE ITEM ON INVENTORY OR AN EQUIPPED ITEM LIKE ARMOR
+    {
+        foreach (InventorySlot slot in allSlots)
+        {
+            if (slot.actualItem == toDiscard)
+            {
+                slot.DiscardItem();
+                return;
+            }
+
+        }
+
+        EquippableSlot equipSlot = equipsScreen.FindSlotWithItem(toDiscard);
+        if(equipSlot)
+        {
+            equipSlot.DiscardItem();
+        }
+
+    }
+
+    public List<OnSaleItem> ReturnAllItens()
+    {
+        List<OnSaleItem> allItens = new List<OnSaleItem>();
+
+        foreach(InventorySlot slot in allSlots)
+        {
+            if(slot.actualItem)
+            {
+                allItens.Add(new OnSaleItem(slot.actualItem, slot.amountOfItens));
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        foreach(EquippableSlot slots in equipsScreen.allSlots)
+        {
+            if(slots.itemEquipped)
+            {
+                allItens.Add(new OnSaleItem(slots.itemEquipped, 1));
+            }
+        }
+
+        return allItens;
+    }
 }

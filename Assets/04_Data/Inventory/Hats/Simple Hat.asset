@@ -17,6 +17,8 @@ MonoBehaviour:
   itemIcon: {fileID: 21300000, guid: fc476c862eab60d4da1e9e2879fcd844, type: 3}
   myType: 3
   isStackable: 0
+  defaultPrice: 100
+  canSell: 0
   sprites:
     upSprite: {fileID: 0}
     downSprite: {fileID: 0}

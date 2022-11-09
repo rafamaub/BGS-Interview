@@ -20,6 +20,8 @@ MonoBehaviour:
   itemIcon: {fileID: -3859293686546308770, guid: 84f5d586479e99a4d8e3dd4822848edf, type: 3}
   myType: 1
   isStackable: 1
+  defaultPrice: 50
+  canSell: 0
   hpPoints: 15
   staminaPoints: 0
   manaPoints: 0

@@ -7,7 +7,7 @@ using TMPro;
 public class InventorySlot : MonoBehaviour
 {
     public InventoryItem actualItem;
-    [SerializeField] private int amountOfItens;
+    public int amountOfItens;
 
     [Header("UI")]
     [SerializeField] private Image itemIcon;

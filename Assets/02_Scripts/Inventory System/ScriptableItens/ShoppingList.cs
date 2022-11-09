@@ -15,5 +15,12 @@ public class OnSaleItem
     public InventoryItem item;
     public int overridePrice;
     public int quantityAvailable;
+
+    public OnSaleItem(InventoryItem newItem, int quantity)
+    {
+        item = newItem;
+        overridePrice = newItem.defaultPrice;
+        quantityAvailable = quantity;
+    }
 }
 

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class EquippableSlot : MonoBehaviour
 {
-    [SerializeField] private EquippableItem itemEquipped;
+    public EquippableItem itemEquipped;
 
     [Header("UI")]
     [SerializeField] private Image itemIcon;
@@ -37,6 +37,17 @@ public class EquippableSlot : MonoBehaviour
         //RETURN TO INVENTORY
         itemIcon.enabled = false;
         manager.GetItem(itemEquipped);
+        GetComponent<Button>().enabled = false;
+
+        itemEquipped = null;
+        //REMOVE EFFECTS FROM ARMOR OR WEAPON
+    }
+
+    public void DiscardItem()
+    {
+        //RETURN TO INVENTORY
+        itemIcon.enabled = false;
+        //manager.GetItem(itemEquipped);
         GetComponent<Button>().enabled = false;
 
         itemEquipped = null;

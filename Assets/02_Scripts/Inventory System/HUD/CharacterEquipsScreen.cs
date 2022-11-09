@@ -9,6 +9,15 @@ public class CharacterEquipsScreen : MonoBehaviour
     [SerializeField] private EquippableSlot boots;
     [SerializeField] private EquippableSlot weapon;
 
+    public List<EquippableSlot> allSlots = new List<EquippableSlot>();
+
+    private void Awake()
+    {
+        allSlots.Add(head);
+        allSlots.Add(body);
+        allSlots.Add(boots);
+        allSlots.Add(weapon);
+    }
     public void InitializeEquipScreen(InventoryManager man)
     {
         head.InitializeSlot(man);
@@ -38,5 +47,26 @@ public class CharacterEquipsScreen : MonoBehaviour
 
     }
 
+    public EquippableSlot FindSlotWithItem(InventoryItem item)
+    {
+        if(head.itemEquipped == item)
+        {
+            return head;
+        }
+        if (body.itemEquipped == item)
+        {
+            return body;
+        }
+        if (boots.itemEquipped == item)
+        {
+            return boots;
+        }
+        if (weapon.itemEquipped == item)
+        {
+            return weapon;
+        }
+
+        return null;
+    }
 
 }
