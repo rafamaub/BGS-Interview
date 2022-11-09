@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerInputController : MonoBehaviour
 {
     [SerializeField] private CharacterController2D movementController;
+    [SerializeField] private InventoryManager inventory;
     public void MovePlayer(InputAction.CallbackContext ctx)
     {
         Vector2 dir = ctx.ReadValue<Vector2>();
@@ -16,6 +17,19 @@ public class PlayerInputController : MonoBehaviour
         else if(ctx.canceled)
         {
             movementController.StopCharacter();
+        }
+    }
+
+    public void OpenInventory(InputAction.CallbackContext ctx)
+    {
+        if(!inventory)
+        {
+            inventory = FindObjectOfType<InventoryManager>();
+        }
+
+        if(ctx.performed)
+        {
+            inventory.ShowInventory();
         }
     }
 }
