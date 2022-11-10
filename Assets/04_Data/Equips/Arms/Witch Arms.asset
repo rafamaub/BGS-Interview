@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dee659159f930f45ab6d59e9c128b65, type: 3}
+  m_Name: Witch Arms
+  m_EditorClassIdentifier: 
+  clothingPack:
+  - sprite: {fileID: -7534457432488945087, guid: ef96b05e8a0ca481cbc3fb1270c1d842, type: 3}
+    category: arm L
+    entry: arm L
+  - sprite: {fileID: -3299781984896232253, guid: ef96b05e8a0ca481cbc3fb1270c1d842, type: 3}
+    category: arm R
+    entry: arm R
+  - sprite: {fileID: -3927660972350478065, guid: ef96b05e8a0ca481cbc3fb1270c1d842, type: 3}
+    category: hand L bottom
+    entry: hand L bottom
+  - sprite: {fileID: 370670995845877671, guid: ef96b05e8a0ca481cbc3fb1270c1d842, type: 3}
+    category: hand R top
+    entry: hand R top

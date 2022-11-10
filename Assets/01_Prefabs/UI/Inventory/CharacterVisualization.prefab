@@ -94,7 +94,8 @@ MonoBehaviour:
   head: {fileID: 3250242938297274164}
   body: {fileID: 1236045328752385628}
   boots: {fileID: 1236045328266872081}
-  weapon: {fileID: 1236045327497556470}
+  arms: {fileID: 1236045327497556470}
+  allSlots: []
 --- !u!1 &1455113458927159102
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,7 +859,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4340482775510426241, guid: bca1eec9a879e0b46be95324aca4e35d, type: 3}
       propertyPath: m_Name
-      value: WEAPON
+      value: ARMS
       objectReference: {fileID: 0}
     - target: {fileID: 4340482775510426242, guid: bca1eec9a879e0b46be95324aca4e35d, type: 3}
       propertyPath: m_Pivot.x
@@ -947,7 +948,7 @@ PrefabInstance:
     - target: {fileID: 4340482775510426243, guid: bca1eec9a879e0b46be95324aca4e35d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ff8444197b8825b4e94c3ffc4c98f31a, type: 3}
+      objectReference: {fileID: 21300000, guid: e991eb9f590bcea46a2c01c21d07df30, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bca1eec9a879e0b46be95324aca4e35d, type: 3}
 --- !u!114 &1236045327497556470 stripped

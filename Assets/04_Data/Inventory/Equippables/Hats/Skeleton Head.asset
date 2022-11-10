@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed63464032961144782de27533d0cfa2, type: 3}
+  m_Name: Skeleton Head
+  m_EditorClassIdentifier: 
+  itemName: Skull Mask
+  itemDescrption: Happy Halloween!
+  itemIcon: {fileID: -4405147217988424385, guid: 99b0c777bbaec48919db0a7ef2f26c1a, type: 3}
+  myType: 3
+  isStackable: 0
+  defaultPrice: 200
+  canSell: 0
+  sideSpritePack: {fileID: 11400000, guid: 70c202a54c2a4c14697cda19079d781c, type: 2}
+  upSpritePack: {fileID: 11400000, guid: 70c202a54c2a4c14697cda19079d781c, type: 2}
+  downSpritePack: {fileID: 11400000, guid: 70c202a54c2a4c14697cda19079d781c, type: 2}
+  protectionAgainstPhysicalDamage: 0
+  protectionAgainstElementalDamage: 0
+  durability: 0

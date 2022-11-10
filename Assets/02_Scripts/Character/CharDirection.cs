@@ -6,9 +6,10 @@ public class CharDirection : MonoBehaviour
 {
     public Direction myDirection;
     [SerializeField] private Animator animator;
-
+    Vector2 cacheScale;
     private void Start()
     {
+        cacheScale = animator.transform.localScale;
         //UpdateAnimation();
         //gameObject.SetActive(false);
     }
@@ -31,11 +32,11 @@ public class CharDirection : MonoBehaviour
     {
         if(toRight)
         {
-            animator.transform.localScale = new Vector3(-1,1,1);
+            animator.transform.localScale = new Vector3(-cacheScale.x, cacheScale.y, 1);
         }
         else
         {
-            animator.transform.localScale = Vector3.one;
+            animator.transform.localScale = cacheScale;
         }
     }
 }

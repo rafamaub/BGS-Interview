@@ -7,7 +7,7 @@ public class CharacterEquipsScreen : MonoBehaviour
     [SerializeField] private EquippableSlot head;
     [SerializeField] private EquippableSlot body;
     [SerializeField] private EquippableSlot boots;
-    [SerializeField] private EquippableSlot weapon;
+    [SerializeField] private EquippableSlot arms;
 
     public List<EquippableSlot> allSlots = new List<EquippableSlot>();
 
@@ -16,14 +16,14 @@ public class CharacterEquipsScreen : MonoBehaviour
         allSlots.Add(head);
         allSlots.Add(body);
         allSlots.Add(boots);
-        allSlots.Add(weapon);
+        allSlots.Add(arms);
     }
     public void InitializeEquipScreen(InventoryManager man)
     {
         head.InitializeSlot(man);
         body.InitializeSlot(man);
         boots.InitializeSlot(man);
-        weapon.InitializeSlot(man);
+        arms.InitializeSlot(man);
     }
 
     public void EquipItem(EquippableItem item)
@@ -39,11 +39,13 @@ public class CharacterEquipsScreen : MonoBehaviour
             case ItemType.Helmet:
                 head.EquipItem(item);
                 break;
-            case ItemType.Weapon:
-                weapon.EquipItem(item);
+            case ItemType.Arms:
+                arms.EquipItem(item);
                 break;
 
         }
+
+
 
     }
 
@@ -61,9 +63,9 @@ public class CharacterEquipsScreen : MonoBehaviour
         {
             return boots;
         }
-        if (weapon.itemEquipped == item)
+        if (arms.itemEquipped == item)
         {
-            return weapon;
+            return arms;
         }
 
         return null;

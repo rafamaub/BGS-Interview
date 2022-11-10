@@ -68,7 +68,7 @@ public class ItemInfoSection : MonoBehaviour
             consumeButton.gameObject.SetActive(false);
         }
 
-        if (showingItem.myType == ItemType.ChestArmor || showingItem.myType == ItemType.Boots || showingItem.myType == ItemType.Helmet || showingItem.myType == ItemType.Weapon)
+        if (showingItem.myType == ItemType.ChestArmor || showingItem.myType == ItemType.Boots || showingItem.myType == ItemType.Helmet || showingItem.myType == ItemType.Arms)
         {
             equipButton.gameObject.SetActive(true);
         }
@@ -98,7 +98,7 @@ public class ItemInfoSection : MonoBehaviour
             //consItem.Resolve();
             DiscardItem();
         }
-        else if(showingItem.myType == ItemType.ChestArmor || showingItem.myType == ItemType.Boots || showingItem.myType == ItemType.Helmet || showingItem.myType == ItemType.Weapon)
+        else if(showingItem.myType == ItemType.ChestArmor || showingItem.myType == ItemType.Boots || showingItem.myType == ItemType.Helmet || showingItem.myType == ItemType.Arms)
         {
             DiscardItem();
             manager.EquipItem((EquippableItem)showingItem);

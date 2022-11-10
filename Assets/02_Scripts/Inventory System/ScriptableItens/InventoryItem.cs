@@ -17,7 +17,7 @@ public class InventoryItem : ScriptableObject
 
 public enum ItemType
 {
-    Undefined, Consumable, ChestArmor, Helmet, Boots, Weapon
+    Undefined, Consumable, ChestArmor, Helmet, Boots, Arms, Weapon
 }
 
 [System.Serializable]

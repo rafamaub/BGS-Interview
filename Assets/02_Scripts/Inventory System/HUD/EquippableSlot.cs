@@ -25,6 +25,7 @@ public class EquippableSlot : MonoBehaviour
         }
 
         itemEquipped = newItem;
+        FindObjectOfType<GlobalEquipManager>().EquipItem(newItem);
         itemIcon.sprite = itemEquipped.itemIcon;
         itemIcon.enabled = true;
         GetComponent<Button>().enabled = true;
@@ -37,6 +38,7 @@ public class EquippableSlot : MonoBehaviour
         //RETURN TO INVENTORY
         itemIcon.enabled = false;
         manager.GetItem(itemEquipped);
+        FindObjectOfType<GlobalEquipManager>().RemoveItem(itemEquipped);
         GetComponent<Button>().enabled = false;
 
         itemEquipped = null;

@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dee659159f930f45ab6d59e9c128b65, type: 3}
+  m_Name: Witch Hat
+  m_EditorClassIdentifier: 
+  clothingPack:
+  - sprite: {fileID: -2023135971043425446, guid: ef96b05e8a0ca481cbc3fb1270c1d842, type: 3}
+    category: head
+    entry: head
+  - sprite: {fileID: -1014429863980590104, guid: ef96b05e8a0ca481cbc3fb1270c1d842, type: 3}
+    category: eye L
+    entry: eye L closed
+  - sprite: {fileID: 4985109980003341977, guid: ef96b05e8a0ca481cbc3fb1270c1d842, type: 3}
+    category: eye L
+    entry: eye L open
+  - sprite: {fileID: -5777619605439173950, guid: ef96b05e8a0ca481cbc3fb1270c1d842, type: 3}
+    category: eye R
+    entry: eye R closed
+  - sprite: {fileID: 8537037320139983090, guid: ef96b05e8a0ca481cbc3fb1270c1d842, type: 3}
+    category: eye R
+    entry: eye R open
+  - sprite: {fileID: -1940015064234012982, guid: ef96b05e8a0ca481cbc3fb1270c1d842, type: 3}
+    category: mouth
+    entry: mouth normal
+  - sprite: {fileID: 6096012853901818282, guid: ef96b05e8a0ca481cbc3fb1270c1d842, type: 3}
+    category: mouth
+    entry: mouth open
+  - sprite: {fileID: -2518801638990489464, guid: ef96b05e8a0ca481cbc3fb1270c1d842, type: 3}
+    category: mouth
+    entry: mouth teeth
+  - sprite: {fileID: -6558912112515081995, guid: ef96b05e8a0ca481cbc3fb1270c1d842, type: 3}
+    category: hair front
+    entry: hair front
+  - sprite: {fileID: 3186848272073465260, guid: ef96b05e8a0ca481cbc3fb1270c1d842, type: 3}
+    category: hair back
+    entry: hair back
+  - sprite: {fileID: -5358502236354933841, guid: ef96b05e8a0ca481cbc3fb1270c1d842, type: 3}
+    category: neck
+    entry: neck
+  - sprite: {fileID: -3987930971951737632, guid: ef96b05e8a0ca481cbc3fb1270c1d842, type: 3}
+    category: neck element
+    entry: neck element

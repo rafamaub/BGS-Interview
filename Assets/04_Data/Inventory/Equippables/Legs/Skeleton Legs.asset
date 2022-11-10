@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed63464032961144782de27533d0cfa2, type: 3}
+  m_Name: Skeleton Legs
+  m_EditorClassIdentifier: 
+  itemName: Skeleton Legs
+  itemDescrption: It's like running with a wooden leg
+  itemIcon: {fileID: -5370418311355444707, guid: 99b0c777bbaec48919db0a7ef2f26c1a, type: 3}
+  myType: 4
+  isStackable: 0
+  defaultPrice: 150
+  canSell: 0
+  sideSpritePack: {fileID: 11400000, guid: ed8584b79be1cdf4189e8a8eb1878456, type: 2}
+  upSpritePack: {fileID: 11400000, guid: ed8584b79be1cdf4189e8a8eb1878456, type: 2}
+  downSpritePack: {fileID: 11400000, guid: ed8584b79be1cdf4189e8a8eb1878456, type: 2}
+  protectionAgainstPhysicalDamage: 0
+  protectionAgainstElementalDamage: 0
+  durability: 0

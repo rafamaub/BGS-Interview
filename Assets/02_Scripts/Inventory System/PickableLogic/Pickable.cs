@@ -21,7 +21,7 @@ public class Pickable : MonoBehaviour
         if(close)
         {
             float distance = Vector2.Distance(transform.position, player.position);
-            transform.position = Vector2.Lerp(transform.position, player.position, Time.deltaTime);
+            transform.position = Vector2.Lerp(transform.position, player.position, Time.deltaTime * 3f);
             if(distance < 0.2f)
             {
                 if(itemToPick)

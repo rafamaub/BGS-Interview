@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EquippableItem : InventoryItem
 {
-    [Header("Equip Settings")]
-    public DirectionalSprites sprites;
+    [Header("Equip Settings")] //SPRITE PACK FOR EVERY DIRECTION THE PLAYER CAN MOVE
+    public ScriptableEquipment sideSpritePack;
+    public ScriptableEquipment upSpritePack;
+    public ScriptableEquipment downSpritePack;
 }

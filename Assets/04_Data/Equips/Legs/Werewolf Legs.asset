@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dee659159f930f45ab6d59e9c128b65, type: 3}
+  m_Name: Werewolf Legs
+  m_EditorClassIdentifier: 
+  clothingPack:
+  - sprite: {fileID: -8395654119544890380, guid: 6d8d9c573c01747b19625c8ab9dee609, type: 3}
+    category: leg L
+    entry: leg L
+  - sprite: {fileID: 8707367593002372109, guid: 6d8d9c573c01747b19625c8ab9dee609, type: 3}
+    category: leg R
+    entry: leg R
