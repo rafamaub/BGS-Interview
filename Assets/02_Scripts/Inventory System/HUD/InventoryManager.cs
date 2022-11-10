@@ -31,6 +31,7 @@ public class InventoryManager : MonoBehaviour
 
     public void ShowInventory()
     {
+        FindObjectOfType<ShopScreenManager>().CloseScreen();
         popUpEffect.DynamicPop();
     }
 
@@ -136,5 +137,11 @@ public class InventoryManager : MonoBehaviour
         }
 
         return allItens;
+    }
+
+
+    public bool IsShowingScreen()
+    {
+        return popUpEffect.open;
     }
 }

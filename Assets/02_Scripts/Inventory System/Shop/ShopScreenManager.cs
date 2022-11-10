@@ -47,6 +47,10 @@ public class ShopScreenManager : MonoBehaviour
     }
     public void OpenScreen()
     {
+        if(invManager.IsShowingScreen())
+        {
+            invManager.ShowInventory();
+        }
         popEffect.Pop();
     }
 

@@ -6,7 +6,7 @@ public class PopUpEffect : MonoBehaviour
 {
     [SerializeField] private float time = 0.65f;
 
-    bool open;
+    public bool open;
     public void Pop()
     {
         if(!open)

@@ -11,7 +11,7 @@ public class EquippableSlot : MonoBehaviour
     [SerializeField] private Image itemIcon;
 
     InventoryManager manager;
-
+    [SerializeField] private SelectionBorder selectionTip;
     public void InitializeSlot(InventoryManager man)
     {
         manager = man;
@@ -24,6 +24,7 @@ public class EquippableSlot : MonoBehaviour
             RemoveItem();
         }
 
+        selectionTip.gameObject.SetActive(true);
         itemEquipped = newItem;
         FindObjectOfType<GlobalEquipManager>().EquipItem(newItem);
         itemIcon.sprite = itemEquipped.itemIcon;
@@ -35,6 +36,7 @@ public class EquippableSlot : MonoBehaviour
 
     public void RemoveItem()
     {
+        selectionTip.gameObject.SetActive(false);
         //RETURN TO INVENTORY
         itemIcon.enabled = false;
         manager.GetItem(itemEquipped);
@@ -47,6 +49,7 @@ public class EquippableSlot : MonoBehaviour
 
     public void DiscardItem()
     {
+        selectionTip.gameObject.SetActive(false);
         //RETURN TO INVENTORY
         itemIcon.enabled = false;
         //manager.GetItem(itemEquipped);

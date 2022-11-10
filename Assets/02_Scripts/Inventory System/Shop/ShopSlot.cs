@@ -13,6 +13,7 @@ public class ShopSlot : MonoBehaviour
 
 
     ShopScreenManager manager;
+    [SerializeField] private SelectionBorder selectionTip;
     public void InitializeSlot(OnSaleItem itemToSale, ShopScreenManager man)
     {
         manager = man;
@@ -20,18 +21,21 @@ public class ShopSlot : MonoBehaviour
 
         itemIcon.sprite = actualItem.item.itemIcon;
         itemPrice.text = actualItem.overridePrice.ToString();
+        selectionTip.gameObject.SetActive(true);
     }
 
     public void SelectMe()
     {
         //TurnOn Effects
         //Tell manager that you are selected
+        selectionTip.Clicked();
         manager.SelectSlot(this);
 
     }
 
     public void UnselectMe()
     {
+        selectionTip.Unselect();
         //TurnOff Effects
     }
 }

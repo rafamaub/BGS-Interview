@@ -12,6 +12,7 @@ public class InventorySlot : MonoBehaviour
     [Header("UI")]
     [SerializeField] private Image itemIcon;
     [SerializeField] private TextMeshProUGUI itemAmount;
+    [SerializeField] private SelectionBorder selectionTip;
 
 
     InventoryManager manager;
@@ -47,6 +48,7 @@ public class InventorySlot : MonoBehaviour
         {
             itemAmount.text = "";
         }
+        selectionTip.gameObject.SetActive(true);
     }
 
 
@@ -74,12 +76,14 @@ public class InventorySlot : MonoBehaviour
     {
         //TurnOn Effects
         //Tell manager that you are selected
+        selectionTip.Clicked();
         manager.SelectSlot(this);
 
     }
 
     public void UnselectMe()
     {
+        selectionTip.Unselect();
         //TurnOff Effects
     }
 }
