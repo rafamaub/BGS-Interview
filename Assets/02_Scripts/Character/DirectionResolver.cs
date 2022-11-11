@@ -107,7 +107,7 @@ public class DirectionResolver : MonoBehaviour
         {
             actualDirection.gameObject.SetActive(false);
         }
-
+        //Debug.Log(newDir.gameObject.name);
         actualDirection = newDir;
         actualDirection.gameObject.SetActive(true);
         actualDirection.InvertAnimation(actualDirection.myDirection == Direction.LEFT);
