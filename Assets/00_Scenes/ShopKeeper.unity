@@ -19627,6 +19627,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0.00005340576
       objectReference: {fileID: 0}
+    - target: {fileID: 1597405901334816153, guid: 64b42e15a7993084b83ff2b194459c8b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 3574998833916895486, guid: 64b42e15a7993084b83ff2b194459c8b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317870443618343547, guid: 64b42e15a7993084b83ff2b194459c8b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000045776367
+      objectReference: {fileID: 0}
     - target: {fileID: 5249736954774449913, guid: 64b42e15a7993084b83ff2b194459c8b, type: 3}
       propertyPath: m_Name
       value: Shop

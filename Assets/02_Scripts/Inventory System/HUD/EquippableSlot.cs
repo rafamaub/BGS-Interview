@@ -53,6 +53,7 @@ public class EquippableSlot : MonoBehaviour
         //RETURN TO INVENTORY
         itemIcon.enabled = false;
         //manager.GetItem(itemEquipped);
+        FindObjectOfType<GlobalEquipManager>().RemoveItem(itemEquipped);
         GetComponent<Button>().enabled = false;
 
         itemEquipped = null;
